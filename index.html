@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hajara Store | Boutique en ligne</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#accueil" class="brand">
+            <img src="logo.png" alt="Logo Hajara Store">
+        </a>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#boutique">Boutique</a>
+            <a href="#apropos">À propos</a>
+            <a href="#webdesigner">Web Designer</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="cart-button" onclick="ouvrirPanier()">
+                🛒 Panier
+                <span id="cart-count">0</span>
+            </button>
+
+            <button
+                class="admin-button"
+                onclick="ouvrirConnexion()"
+                title="Administration"
+            >
+                🔐
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= ACCUEIL ================= -->
+
+    <section id="accueil" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <img
+                src="logo.png"
+                alt="Hajara Store"
+                class="hero-logo"
+            >
+
+            <p class="hero-subtitle">
+                Plus qu’un achat, une expérience qui vous ressemble.
+            </p>
+
+            <p class="hero-description">
+                Découvrez notre sélection de produits et commandez
+                simplement depuis votre téléphone.
+            </p>
+
+            <a href="#boutique" class="main-button">
+                Découvrir la boutique
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AVANTAGES ================= -->
+
+    <section class="advantages">
+
+        <div class="advantage">
+            <span>🚚</span>
+            <h3>Livraison</h3>
+            <p>Partout au Sénégal</p>
+        </div>
+
+        <div class="advantage">
+            <span>✓</span>
+            <h3>Qualité</h3>
+            <p>Produits sélectionnés</p>
+        </div>
+
+        <div class="advantage">
+            <span>💬</span>
+            <h3>Service client</h3>
+            <p>À votre écoute</p>
+        </div>
+
+        <div class="advantage">
+            <span>🎁</span>
+            <h3>Emballage</h3>
+            <p>Soin et discrétion</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOUTIQUE ================= -->
+
+    <section id="boutique" class="products-section">
+
+        <div class="section-title">
+
+            <p>NOTRE COLLECTION</p>
+
+            <h2>Nos produits</h2>
+
+            <span>
+                Faites votre choix et ajoutez vos articles au panier.
+            </span>
+
+        </div>
+
+        <div
+            class="products"
+            id="products-container"
+        ></div>
+
+    </section>
+
+
+    <!-- ================= À PROPOS ================= -->
+
+    <section id="apropos" class="about">
+
+        <div class="about-content">
+
+            <p class="small-title">
+                À PROPOS DE NOUS
+            </p>
+
+            <h2>
+                Bienvenue chez Hajara Store
+            </h2>
+
+            <p>
+                Hajara Store est une boutique en ligne basée à Rufisque,
+                proposant une sélection de produits choisis avec soin.
+            </p>
+
+            <p>
+                Notre objectif est de vous offrir une expérience simple,
+                élégante et professionnelle, de la découverte du produit
+                jusqu'à la commande.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WEB DESIGNER ================= -->
+
+    <section
+        id="webdesigner"
+        class="webdesigner"
+    >
+
+        <div class="webdesigner-content">
+
+            <p class="small-title">
+                VOUS AVEZ UN BUSINESS ?
+            </p>
+
+            <h2>
+                Donnez à votre activité une présence professionnelle
+                sur Internet.
+            </h2>
+
+            <p class="webdesigner-intro">
+                Je crée des sites web modernes, élégants et adaptés
+                aux boutiques, entreprises et entrepreneurs.
+            </p>
+
+
+            <div class="services">
+
+                <div class="service-card">
+
+                    <span>🌐</span>
+
+                    <h3>
+                        Site vitrine
+                    </h3>
+
+                    <p>
+                        Présentez votre entreprise, vos services
+                        et vos coordonnées.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <span>🛍️</span>
+
+                    <h3>
+                        Boutique en ligne
+                    </h3>
+
+                    <p>
+                        Présentez vos produits et recevez
+                        vos commandes en ligne.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <span>📱</span>
+
+                    <h3>
+                        Design responsive
+                    </h3>
+
+                    <p>
+                        Un site adapté aux téléphones,
+                        tablettes et ordinateurs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://wa.me/221772818149?text=Bonjour%2C%20je%20souhaite%20cr%C3%A9er%20un%20site%20web."
+                target="_blank"
+                class="main-button"
+            >
+                💬 Créer mon site
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+        id="contact"
+        class="contact"
+    >
+
+        <p class="small-title">
+            CONTACT
+        </p>
+
+        <h2>
+            Hajara Store
+        </h2>
+
+
+        <div class="contact-info">
+
+            <p>
+                📍 Guendel 1, Rufisque, Sénégal
+            </p>
+
+            <p>
+                📞 +221 77 281 81 49
+            </p>
+
+            <p>
+                📞 +221 70 424 38 28
+            </p>
+
+            <p>
+                ✉️ aramedieyesarr27@gmail.com
+            </p>
+
+        </div>
+
+
+        <a
+            href="https://wa.me/221772818149"
+            target="_blank"
+            class="whatsapp-button"
+        >
+            💬 WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- ================= PANIER ================= -->
+
+    <div
+        id="cart-modal"
+        class="cart-modal"
+    >
+
+        <div class="cart-content">
+
+            <button
+                class="close-cart"
+                onclick="fermerPanier()"
+            >
+                ×
+            </button>
+
+
+            <h2>
+                🛒 Mon panier
+            </h2>
+
+
+            <div id="cart-items"></div>
+
+
+            <div class="cart-total">
+
+                Total :
+
+                <strong id="cart-total">
+                    0 FCFA
+                </strong>
+
+            </div>
+
+
+            <div class="payment">
+
+                <h3>
+                    💳 Paiement
+                </h3>
+
+                <p>
+                    Choisissez votre moyen de paiement :
+                </p>
+
+
+                <div class="payment-buttons">
+
+                    <button
+                        class="wave-button"
+                        onclick="choisirPaiement('Wave')"
+                    >
+                        Wave
+                    </button>
+
+
+                    <button
+                        class="orange-button"
+                        onclick="choisirPaiement('Orange Money')"
+                    >
+                        Orange Money
+                    </button>
+
+                </div>
+
+
+                <div id="payment-info"></div>
+
+            </div>
+
+
+            <button
+                class="whatsapp-button order-button"
+                onclick="commanderWhatsApp()"
+            >
+                📲 Envoyer ma commande sur WhatsApp
+            </button>
+
+
+            <p class="payment-note">
+
+                Après votre paiement, envoyez votre capture d'écran
+                sur WhatsApp afin que nous puissions vérifier
+                et valider votre commande.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONNEXION ADMIN ================= -->
+
+    <div
+        id="login-modal"
+        class="admin-modal"
+    >
+
+        <div class="admin-login">
+
+            <button
+                class="close-admin"
+                onclick="fermerConnexion()"
+            >
+                ×
+            </button>
+
+            <div class="admin-icon">
+                🔐
+            </div>
+
+            <h2>
+                Administration
+            </h2>
+
+            <p>
+                Accès réservé à Hajara Store
+            </p>
+
+
+            <input
+                type="password"
+                id="admin-password"
+                placeholder="Mot de passe"
+                onkeydown="if(event.key === 'Enter') verifierMotDePasse()"
+            >
+
+
+            <button
+                class="main-button"
+                onclick="verifierMotDePasse()"
+            >
+                Se connecter
+            </button>
+
+
+            <p
+                id="login-error"
+                class="login-error"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ESPACE ADMIN ================= -->
+
+    <section
+        id="admin-panel"
+        class="admin-panel"
+    >
+
+        <div class="admin-panel-header">
+
+            <div>
+
+                <p class="small-title">
+                    ESPACE PRIVÉ
+                </p>
+
+                <h2>
+                    Administration Hajara Store
+                </h2>
+
+                <p>
+                    Gérez vos produits depuis cet espace.
+                </p>
+
+            </div>
+
+
+            <button
+                class="logout-button"
+                onclick="fermerAdministration()"
+            >
+                Déconnexion
+            </button>
+
+        </div>
+
+
+        <!-- AJOUTER PRODUIT -->
+
+        <div class="admin-box">
+
+            <h3>
+                ➕ Ajouter un produit
+            </h3>
+
+
+            <form
+                id="product-form"
+                class="product-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="product-image">
+                        📸 Photo du produit
+                    </label>
+
+                    <input
+                        type="file"
+                        id="product-image"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="product-name">
+                        🏷️ Nom du produit
+                    </label>
+
+                    <input
+                        type="text"
+                        id="product-name"
+                        placeholder="Ex : Parfum Asad"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="product-price">
+                        💰 Prix
+                    </label>
+
+                    <input
+                        type="number"
+                        id="product-price"
+                        placeholder="Ex : 15000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="product-description">
+                        📝 Description
+                    </label>
+
+                    <textarea
+                        id="product-description"
+                        placeholder="Description du produit..."
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="main-button"
+                >
+                    ➕ Ajouter le produit
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- PRODUITS ADMIN -->
+
+        <div class="admin-box">
+
+            <h3>
+                📦 Mes produits
+            </h3>
+
+
+            <div
+                id="admin-products"
+                class="admin-products"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <img
+            src="logo.png"
+            alt="Hajara Store"
+            class="footer-logo"
+        >
+
+        <p>
+            © 2026 Hajara Store — Tous droits réservés.
+        </p>
+
+        <p>
+            Création web : HAJARA WEB STUDIO
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
